@@ -5,18 +5,16 @@ acordo com sua forma tradicional. */
 #include<stdio.h>
 
 int main(){
-int num;
+    int num;
+    printf("Digite um número para descobrir sua tabuada: \n");
+    scanf("%d", &num);
 
-printf("Digite um número qualquer: ");
-scanf("%d", &num);
+    for (int i = 0; i <= 10; i++)
+    {
+        int r = i * num;
+        printf("%d x %d = %d \n",num,i,r);
 
-printf("Tabuada do %d: \n", num);
-
-for ( int i = 1; i <= 10; i++)
-{
-    int resultado = i * num;
-    printf("%d x %d = %d \n",num,i, resultado);
-}
-return 0;
-
+    }
+    
+    return 0;
 }

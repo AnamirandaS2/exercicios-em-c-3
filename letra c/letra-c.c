@@ -3,14 +3,19 @@ primeiros números naturais (1 + 2 + 3 +...+ 98 + 99 + 100). */
 
 #include<stdio.h>
 
-int main(){
-    int i;
+int soma100(){
     int soma = 0;
-
+    int i;
     for (i = 1; i <= 100; i++)
     {
-        soma += i;
+         soma += i;
     }
-    printf("A soma dos 100 primeiros números naturais é %d", soma);
+    return soma;
+    
+}
+
+int main(){
+    int resultado = soma100();
+    printf("%d", resultado);
     return 0;
 }

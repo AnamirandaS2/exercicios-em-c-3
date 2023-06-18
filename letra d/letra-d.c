@@ -2,20 +2,22 @@
 valores pares existentes na faixa de 1 até 500. */
 
 #include<stdio.h>
-int main(){
-    int num;
+
+int somaPar500(){
     int soma = 0;
-    for (int i = 0; i <= 500; i++)
+    for (int i = 1; i <= 500; i++)
     {
-        if (i%2 == 0)
+        if (i % 2 == 0)
         {
             soma += i;
-
         }
         
-        
     }
-    printf("%d",soma);
+    return soma;
+}
+
+int main(){
+    int r = somaPar500();
+    printf("A soma dos pares até 500 é: %d \n", r);
     return 0;
-    
 }
