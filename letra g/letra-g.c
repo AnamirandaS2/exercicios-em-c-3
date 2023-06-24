@@ -9,25 +9,17 @@ próprio. Não use o operador aritmético de exponenciação
 apresentado no Capítulo 3; resolva o problema com a
 técnica de laço. */
 #include<stdio.h>
+#include<math.h>
 
 int potencia(){
     int r;
     for (int expoente = 0; expoente <= 15 ; expoente++)
     {        
         int base = 3;
-
-        if (expoente == 0)
-        {
-            printf("%d elevado a %d é 1 \n", base, expoente);
-        }
         
-        for (base = 3; base < ; i++)
-        {
-            /* code */
-        }
-        
+        r = pow(base,expoente);
         printf("%d elevado a %d é %d \n", base, expoente, r);
-        
+
     }
     return r;
 }
